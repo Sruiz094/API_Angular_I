@@ -1,0 +1,13 @@
+<h1>API Rick And Morty</h1>
+<p>Si desea visualizar los episodios y las localizaciones de click en el boton correspodiente</p>
+<button routerLink="episodio">Episodios</button>
+<button routerLink="localizacion">Localizaciones</button>
+<h2>Lista de Personajes</h2>
+<mat-list role="list">
+  <mat-list-item *ngFor="let personaje of personajes">
+    <mat-icon matListItemIcon><img [src]="personaje.image" width="50" height="50"></mat-icon>
+    <div matListItemTitle>{{ personaje.name }}</div>
+    <div matListItemLine>Status: {{ personaje.status }} -- Especie: {{ personaje.species }}</div>
+    <div matListItemLine>Fecha de creación: {{ personaje.created | date: 'medium' }}</div>
+  </mat-list-item>
+</mat-list>

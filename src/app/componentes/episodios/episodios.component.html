@@ -1,0 +1,11 @@
+<h1>Episodios</h1>
+<mat-list role="list">
+  <mat-list-item *ngFor="let episodios of episodio">
+    <div matListItemTitle>{{ episodios.episode }}</div>
+    <div matListItemLine>Fecha de creación: {{ episodios.air_date | date: 'medium' }}</div>
+  </mat-list-item>
+</mat-list>
+
+
+
+

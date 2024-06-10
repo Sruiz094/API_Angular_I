@@ -1,0 +1,9 @@
+<h1>Localización</h1>
+<mat-list role="list">
+  <mat-list-item *ngFor="let localizaciones of localizacion">
+    <div matListItemTitle>{{ localizaciones.name}}</div>
+    <div matListItemLine>Fecha de creación: {{ localizaciones.created | date: 'medium' }}</div>
+  </mat-list-item>
+</mat-list>
+
+
