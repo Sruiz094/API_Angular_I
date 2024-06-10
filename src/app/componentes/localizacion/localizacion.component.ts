@@ -18,7 +18,7 @@ export class LocalizacionComponent {
   constructor(private servicioApi: RickAndMortyService) { }
 
   ngOnInit(): void {
-    this.servicioApi.obtenerEpisodio().subscribe(resultado => {
+    this.servicioApi.obtenerLocalizacion().subscribe(resultado => {
       this.localizacion = resultado.results;
       console.log(this.localizacion);
     });
